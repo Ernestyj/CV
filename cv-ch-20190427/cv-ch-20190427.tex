@@ -60,6 +60,7 @@
 \renewcommand*{\headerquotestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\itshape\color{text} #1}}
 
 \renewcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{text} #1}}
+%\renewcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -88,7 +89,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
-\quote{硕士{\ \ \cdotp\ \ }上海交通大学{\quad\textbar\quad}学士{\ \ \cdotp\ \ }电子科技大学}
+\quote{硕士{\ \ \cdotp\ \ }上海交通大学{\quad\textbar\quad}学士{\ \ \cdotp\ \ }电子科技大学{\quad\textbar\quad}软件工程专业}
 
 
 %-------------------------------------------------------------------------------
@@ -121,7 +122,7 @@
 %-------------------------------------------------------------------------------
 \begin{cvparagraph}
 %---------------------------------------------------------
-Current Site Reliability Engineer at start-up company Kasa. 7+ years experience specializing in the backend development, infrastructure automation, and computer hacking/security. Super nerd who loves Vim, Linux and OS X and enjoys to customize all of the development environment. Interested in devising a better problem-solving method for challenging tasks, and learning new technologies and tools if the need arises.
+两年半工作经验，熟悉全栈开发，有数据分析以及支付风险控制业务经验。作为主力工程师参与业务分析、设计与开发风控规则指标分析系统、自动化风控解决方案生成平台。参与并了解基于C++开发的大型分布式NoSQL数据库项目。
 \end{cvparagraph}
 
 
@@ -154,50 +155,40 @@ Current Site Reliability Engineer at start-up company Kasa. 7+ years experience 
 %---------------------------------------------------------
   \cventry
     {数据工程师} % Job title
-    {PayPal{\ \cdotp\ \ }全球风险控制} % Organization
-    {上海} % Location
+    {PayPal{\ \cdotp\ \ }全球交易风险控制} % Organization
+    {\ } % Location
     {2017年8月 - 至今} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {熟悉基于规则的风控解决方案的监控、分析与决策，构建了一站式风控规则监控分析系统, 缩短了风控方案的分析决策周期，有效节省了80\%以上的时间成本}
-        \item {构建了从损失报警到生成解决方案的自动化风控平台，自动生成的解决方案可比于人工解决方案，缩短2-3周生成解决方案的周期，节省约70\%人力成本，每年止损收益逼近1M}
-        \item {构建}
+        \item {参与业务逻辑分析，并构建了一站式风控规则指标分析系统Rule360，缩短风控分析决策周期，节省约80\%的时间成本}
+        \item {参与设计、构建从损失报警到生成解决方案的自动化风控平台HyperNet，自动生成的风控方案有效性不低于人工解决方案，缩短2-3周生成风控方案的周期，节省约70\%人力成本，每年止损收益约1M}
+        \item {独立构建了一站式基于规则的客户服务指标分析系统Lexa360，帮助提高自助服务推荐解决方案的准确率，提升客户服务满意度，减少客户联系率，降低人工客服成本}
       \end{cvitems}
     }
     
 %---------------------------------------------------------
   \cventry
-    {HyperNet 自动化风控解决方案平台} % Job title
+    {HyperNet 自动化风控平台} % Job title
     {} % Organization
     {} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {开发了。。。}
+        \item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征编码，整合生成训练与测试数据集}
+        \item {使用XGBoost构建规则训练模型，按风控指标筛选规则生成风控方案}
+        \item {使用React构建前端损失警报与自动风控方案监控管理平台}
       \end{cvitems}
     }
     
 %---------------------------------------------------------
   \cventry
-    {Rule360 风控规则监控分析系统} % Job title
-    {} % Organization
-    {} % Location
-    {\ } % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {}
-      \end{cvitems}
-    }
-    
-%---------------------------------------------------------
-  \cventry
-    {研发工程师{\ \cdotp\ \ }Mola分布式数据库} % Job title
+    {研发工程师{\ \cdotp\ \ }Mola大型分布式数据库} % Job title
     {百度{\ \cdotp\ \ }基础架构部} % Organization
-    {上海} % Location
+    {\ } % Location
     {2017年3月 - 2017年7月} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Mola是百度内部广泛使用的NoSQL数据库，也为百度云提供全托管NoSQL数据库服务}
+        \item {Mola是用C/C++编写的大型NoSQL数据库，于百度内部提供广泛的存储服务，为百度云提供全托管NoSQL数据库服务}
         \item {在Proxyserver中为百度云公网访问MolaDB服务添加标准访问日志，添加请求key记录，有效缩短后台故障排查时间}
         \item {解决Node中分片恢复过程Task修改异步引发恢复错误问题，有效降低了Mola服务的故障率}
       \end{cvitems}
@@ -207,28 +198,41 @@ Current Site Reliability Engineer at start-up company Kasa. 7+ years experience 
   \cventry
     {实习数据工程师{\ \cdotp\ \ }精益-广告投放数据分析} % Job title
     {百度{\ \cdotp\ \ }生态数据产品部} % Organization
-    {上海} % Location
+    {\ } % Location
     {2016年7月 - 2016年10月} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {精益对凤巢、Holmes等广告数据进行监测与评估，建立漏斗模型(人群转化、流动、归因分析)分析广告营销活动效果}
-        \item {对上游广告源数据进行ETL(Hive/SQL)及数据拼接、编写UDF(Spark)，优化ETL速率，并线上验证数据分析准确性}
-        \item {接入按查询/搜索关键词新建模型(Spark/Scala)的功能业务，广告主可以按关键词查看广告投放效果}
+        \item {对上游广告源数据进行ETL(Hive)及数据拼接、编写Spark UDF，优化ETL速率，并线上验证数据分析准确性}
+        \item {接入按查询/搜索关键词新建模型(Spark)的功能业务，广告主可以按关键词查看广告投放效果}
       \end{cvitems}
     }
         
 %---------------------------------------------------------
   \cventry
-    {实习算法工程师{\ \cdotp\ \ }量化投资策略分析} % Job title
+    {实习算法工程师{\ \cdotp\ \ }量化投资策略分析(毕业设计)} % Job title
     {荣石投资管理有限公司} % Organization
-    {上海} % Location
-    {2017年3月 - 2017年7月} % Date(s)
+    {\ } % Location
+    {2016年2月 - 2016年6月} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {基于python实现Hurst指数、SMA双均线突破、分类预测择时策略}
         \item {从Wind获取原始股票交易数据，并构建交易时间序列数据库(Cassandra)，作为公司内部数据源便于后续数据分析}
         \item {提出基于最大信息熵的股票特征选取方法，对比主成分分析、奇异值分解等方法高出约4.5\%的预测精确度}
         \item {提出SRA-Voting混合二元分类模型，对比SVM、随机森林、AdaBoost高出约3.125\%的预测精确度}
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+  \cventry
+    {实习软件工程师{\ \cdotp\ \ }东方名城社区系统} % Job title
+    {人行道网络信息技术有限公司} % Organization
+    {\ } % Location
+    {2015年6月 - 2015年12月} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {以杨浦区五角场镇为试点的社区治理系统(社区治理服务、邻里社交、社区公共服务)，包含移动端、Web服务端、应用门户}
+        \item {负责系统需求分析、移动端原型设计、Android应用开发、部分Java Web后台服务(SSM)开发}
       \end{cvitems}
     }
     
@@ -249,15 +253,19 @@ Current Site Reliability Engineer at start-up company Kasa. 7+ years experience 
 %---------------------------------------------------------
   \cvskill
     {编程语言} % Category
-    {C++, Python, Java, React} % Skills
+    {Python, C++, Java, SQL, Shell, JavaScript} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {框架技术} % Category
+    {Pandas, Flask, Celery, React, Redux, Spark} % Skills
 %---------------------------------------------------------
   \cvskill
     {工具} % Category
-    {Teradata, Excel, Tableau} % Skills
+    {Teradata, MySQL, MongoDB, Emacs, Git, Jenkins, Docker, Excel, Tableau} % Skills
 %---------------------------------------------------------
   \cvskill
     {英文} % Category
-    {CET6/GRE/良好听说读写能力} % Skills
+    {CET6, GRE, 良好听说读写能力} % Skills
 %---------------------------------------------------------
 \end{cvskills}
 
