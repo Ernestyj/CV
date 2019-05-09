@@ -51,20 +51,28 @@
 
 %%%%%%%%%%%%%%%%%% custom settings
 
-\geometry{left=2.0cm, top=1.8cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
 
 \renewcommand{\acvHeaderAfterNameSkip}{1mm}
 \renewcommand{\acvHeaderAfterSocialSkip}{1mm}
 
+\renewcommand*{\paragraphstyle}{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}}
+
 %\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
 \renewcommand*{\headerlastnamestyle}[1]{{\fontsize{26pt}{1em}\headerfont\bfseries\color{text} #1}}
-\renewcommand*{\headerpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{awesome} #1}}
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{awesome} #1}}
 %\renewcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{text} #1}}
-\renewcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{text} #1}}
-\renewcommand*{\headerquotestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\itshape\color{text} #1}}
+\renewcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headerfont\color{text} #1}}
+\renewcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{text} #1}}
 
-\renewcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{text} #1}}
-%\renewcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\renewcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{graytext} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{graytext} #1}}
+\renewcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{text} #1}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+
+\renewcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{text} #1}}
 
 %%%%%%%%%%%%%%%%%% custom settings
 
@@ -128,7 +136,7 @@
 %-------------------------------------------------------------------------------
 \begin{cvparagraph}
 %---------------------------------------------------------
-两年半工作经验，熟悉全栈开发，有数据分析以及支付风险控制业务经验。作为主力工程师参与业务分析、设计与开发风控规则指标分析系统、自动化风控解决方案生成平台。参与并了解基于C++开发的大型分布式NoSQL数据库项目。python 自动化，数据分析，可视化，后台服务调度，风控模型训练、
+两年半工作经验，有基于C++的大型分布式NoSQL数据库项目开发经验。熟悉使用Python开发后台服务、自动化系统，进行数据分析、建模与可视化，有基于React的前端开发经验。作为主力工程师参与设计、开发风控决策规则分析系统、自动化风控解决方案生成平台、实时决策数据监控报警平台。
 \end{cvparagraph}
 
 
@@ -161,12 +169,12 @@
 %---------------------------------------------------------
   \cventry
     {数据工程师} % Job title
-    {PayPal{\ \cdotp\ \ }全球交易风险控制} % Organization
+    {PayPal{\ \cdotp\ \ }数据分析与决策管理部门} % Organization
     {\ } % Location
     {2017年8月 - 至今} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {参与风控数据分析(SQL, Pandas)，并构建了风控决策规则全方位分析系统(Flask, React)，包括规则解析引擎、决策监控、规则性能指标评估、决策因子引用分析等模块，节省约80\%的分析成本}
+        \item {参与风控数据分析(SQL, Pandas)，并构建了风控决策规则全方位分析系统(Flask, React)，包括规则解析引擎、近实时决策监控、决策规则性能指标评估、决策因子引用分析等模块，节省约80\%的分析成本}
         \item {参与设计、构建从损失报警到生成解决方案的自动化风控平台HyperNet，自动生成的风控方案有效性不低于人工解决方案，缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k}
         %\item {独立构建了一站式客户服务指标分析系统Lexa360，帮助提高自助服务推荐解决方案的准确率，提升客户服务满意度，减少客户联系率，降低人工客服成本}
       \end{cvitems}
@@ -181,7 +189,7 @@
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征编码，整合生成训练与测试数据集}
-        \item {使用XGBoost构建规则决策树模型，按风控指标筛选决策规则生成风控方案}
+        \item {使用XGBoost构建决策树模型，按风控经验指标过滤决策规则生成风控方案}
         \item {使用React构建前端损失报警与自动风控方案监控管理平台}
       \end{cvitems}
     }
@@ -194,7 +202,7 @@
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {开发报警任务执行模块， 消费PayPal线上交易决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析、决策反馈、可视化(Matplotlib)、邮件通知等任务。}
+        \item {开发报警任务执行系统， 消费风险决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析(Pandas, Spark)、决策反馈、可视化(Matplotlib)、邮件报警等任务。}
         \item {基于Celery, RabbitMQ实现任务链和异步优先级任务调度，提供更高效稳定的报警服务}
       \end{cvitems}
     }
@@ -214,7 +222,7 @@
 
 %---------------------------------------------------------
   \cventry
-    {实习数据工程师{\ \cdotp\ \ }精益-广告投放数据分析} % Job title
+    {实习数据工程师{\ \cdotp\ \ }精益--广告投放数据分析} % Job title
     {百度{\ \cdotp\ \ }生态数据产品部} % Organization
     {\ } % Location
     {2016年7月 - 2016年10月} % Date(s)
@@ -222,7 +230,7 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {精益对凤巢、Holmes等广告数据进行监测与评估，建立漏斗模型(人群转化、流动、归因分析)分析广告营销活动效果}
         \item {对上游广告源数据进行ETL(Hive)及数据拼接、编写Spark UDF，优化ETL速率，并线上验证数据分析准确性}
-        \item {接入按查询/搜索关键词新建模型(Spark)的功能业务，广告主可以按关键词查看广告投放效果}
+        %\item {接入按查询/搜索关键词新建模型(Spark)的功能业务，广告主可以按关键词查看广告投放效果}
       \end{cvitems}
     }
         
