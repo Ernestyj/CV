@@ -673,7 +673,7 @@
   \vspace{-4.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{1.5pt}
+    \setlength{\parskip}{1.6pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
