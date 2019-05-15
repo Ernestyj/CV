@@ -121,7 +121,8 @@
 \makecvfooter
   {\ }
   {\ }
-  {\thepage}
+  %{\thepage}
+  {\ }
 
 
 %-------------------------------------------------------------------------------
@@ -177,7 +178,8 @@
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {与分析师紧密合作，进行风控数据分析(SQL, Pandas)，构建决策规则分析系统(Flask, React)，包括规则解析、近实时决策监控、决策规则性能指标评估、决策因子引用分析(Neo4j)等模块，节省约80\%的决策分析成本}
+        \item {与全球分析师紧密合作，进行风控数据分析(SQL, Pandas)，构建决策规则分析系统(Flask, React)，包括规则解析(XML)、近实时决策监控、决策规则性能指标评估、决策因子引用分析(Neo4j)等模块，节省约80\%的决策分析成本}
+        \item {采用主副节点、分片等方法优化结构化风控大数据的存储(MySQL)，并支持全量数据更新}
         %\item {参与设计、构建从损失报警到生成解决方案的自动化风控平台HyperNet，自动生成的风控方案有效性不低于人工解决方案，缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k}
         %\item {独立构建了一站式客户服务指标分析系统Lexa360，帮助提高自助服务推荐解决方案的准确率，提升客户服务满意度，减少客户联系率，降低人工客服成本}
       \end{cvitems}
@@ -205,7 +207,7 @@
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {开发报警任务执行系统， 消费交易决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析(Pandas, Spark)、可视化(Matplotlib)、邮件报警等任务}
+        \item {开发报警任务执行系统， 消费交易决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析(Pandas, Spark)、可视化(Matplotlib)、邮件报警(Jinja2)等任务}
         \item {基于Celery, RabbitMQ实现任务链和异步优先级任务调度，提高报警服务性能及可靠性}
       \end{cvitems}
     }
@@ -218,7 +220,8 @@
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {在Proxyserver中为百度云公网访问MolaDB服务添加标准访问日志(C++)，添加请求key记录，缩短后台故障排查时间}
+        %\item {研究}
+        \item {在Proxyserver中为百度云公网访问MolaDB服务添加标准访问日志(类Nginx)，添加请求key记录，缩短后台故障排查时间}
         \item {通过加锁解决数据存储节点Node中的分片在自动容错恢复(Recover Service)过程中，异步修改Recover Task引发的恢复任务错误异常，降低Mola服务的故障率}
       \end{cvitems}
     }
@@ -272,8 +275,7 @@
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         %\item {基于python实现Hurst指数、SMA双均线突破、分类预测择时策略}
-        \item {研究并提出基于最大信息熵的股票特征选取方法，对比主成分分析、奇异值分解等方法高出约4.5\%的预测精确度}
-        \item {研究并提出SRA-Voting混合二元分类模型，对比支持向量机、随机森林、AdaBoost高出约3.125\%的预测精确度}
+        \item {研究并提出基于最大信息熵的股票特征选取方法，对比主成分分析、奇异值分解等方法高出约4.5\%的预测精确度；研究并提出SRA-Voting混合二元分类模型，对比支持向量机、随机森林、AdaBoost高出约3.125\%的预测精确度}
       \end{cvitems}
     }
     
