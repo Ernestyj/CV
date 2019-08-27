@@ -1,0 +1,338 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper, UTF8]{awesome-cv}
+
+% Chinese
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%%%%%%%%%%%%%%%%%% custom settings
+
+\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+
+\renewcommand{\acvSectionTopSkip}{0mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+
+\renewcommand{\acvHeaderAfterNameSkip}{1mm}
+\renewcommand{\acvHeaderAfterSocialSkip}{1mm}
+
+\renewcommand*{\paragraphstyle}{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}}
+
+%\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{26pt}{1em}\headerfont\bfseries\color{text} #1}}
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{awesome} #1}}
+\renewcommand*{\headeraddressstyle}[1]{{\fontsize{10pt}{1em}\headerfont\itshape\color{text} #1}}
+\renewcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headerfont\color{text} #1}}
+\renewcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{text} #1}}
+
+\renewcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{graytext} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{graytext} #1}}
+\renewcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\itshape\color{text} #1}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+
+\renewcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{text} #1}}
+
+%%%%%%%%%%%%%%%%%% custom settings
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./profile}
+\name{}{杨健}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\position{高级软件工程师{\enskip\cdotp\enskip}上海}
+%\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+86) 18516191607}
+\email{ernestyj@outlook.com}
+%\homepage{www.posquit0.com}
+\github{Ernestyj}
+%\linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+ %\medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+%\extrainfo{电话: (+86) 18516191607{\quad\textbar\quad}邮件: ernestyj@outlook.com}
+
+\quote{硕士{\ \ \cdotp\ \ }上海交通大学{\quad\textbar\quad}学士{\ \ \cdotp\ \ }电子科技大学{\quad\textbar\quad}软件工程专业}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\ }
+  {\ }
+  %{\thepage}
+  {\ }
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{个人简介}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvparagraph}
+%---------------------------------------------------------
+三年工作经验。参与开发基于C++的大型分布式NoSQL数据库，熟悉C++面向对象开发。参与设计、开发金融交易风控系统，包括决策规则分析系统、自动化风控平台、实时交易数据监控报警平台；熟悉Python全栈开发，数据分析、建模与可视化。
+\end{cvparagraph}
+
+
+
+%\input{cv/experience.tex}
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{工作经历}
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+%---------------------------------------------------------
+%  \cventry
+%    {Software Architect} % Job title
+%    {Omnious. Co., Ltd.} % Organization
+%    {Seoul, S.Korea} % Location
+%    {Jun. 2017 - May. 2018} % Date(s)
+%    {
+%      \begin{cvitems} % Description(s) of tasks/responsibilities
+%        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
+%        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
+%        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
+%        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
+%        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
+%        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+%      \end{cvitems}
+%    }
+%---------------------------------------------------------
+  \cventry
+    {Rule360 决策规则分析系统 - 高级软件工程师} % Job title
+    {PayPal{\ \cdotp\ \ }数据分析与决策管理部门} % Organization
+    {2017年8月 - 至今} % Location
+    {\ } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {与全球分析师紧密合作，进行风控数据分析(SQL, Pandas)，构建决策规则分析系统(Flask, React)，包括规则解析(XML)、近实时决策监控、决策规则性能指标评估、决策因子引用分析(Neo4j)等模块，节省约80\%的决策分析成本}
+        \item {优化风控大数据结构化存储读写性能(MySQL)，支持全量大数据更新}
+        %\item {参与设计、构建从损失报警到生成解决方案的自动化风控平台HyperNet，自动生成的风控方案有效性不低于人工解决方案，缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k}
+        %\item {独立构建了一站式客户服务指标分析系统Lexa360，帮助提高自助服务推荐解决方案的准确率，提升客户服务满意度，减少客户联系率，降低人工客服成本}
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+  \cventry
+    {HyperNet 自动化风控平台 - 数据分析与全栈开发} % Job title
+    {} % Organization
+    {} % Location
+    {\ } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征独热编码，整合生成训练与测试数据集}
+        \item {使用XGBoost构建决策树模型，按风控经验指标过滤决策规则生成风控方案；使用React构建前端损失报警与自动风控方案监控管理平台}
+        \item {构建SQL风控规则翻译引擎，支持用户从任意SQL规则翻译成IBM决策引擎规则}
+        \item {有效缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k，荣获PayPal Spot Award(5\%)}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Spider 实时交易数据监控报警平台 - 后端开发} % Job title
+    {} % Organization
+    {} % Location
+    {\ } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {开发报警任务执行系统， 消费交易决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析(Pandas, Spark)、可视化(Matplotlib)、邮件报警(Jinja2)等任务}
+        \item {基于Celery, RabbitMQ实现任务链和异步优先级任务调度，提高报警服务性能及可靠性}
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+  \cventry
+    {Mola大型分布式NoSQL数据库 - 研发工程师} % Job title
+    {百度{\ \cdotp\ \ }基础架构部} % Organization
+    {2017年3月 - 2017年6月} % Location
+    {\ } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {研究Mola分布式架构，Meta Server选主机制(Lease)，Node数据分片自动恢复}
+        %\item {在Proxyserver中为百度云公网访问MolaDB服务添加标准访问日志(类Nginx)，添加请求key记录，缩短后台故障排查时间}
+        \item {通过加锁解决数据存储节点Node中的分片在自动恢复过程中，异步修改Recover Task引发的恢复任务错误异常，降低Mola服务的故障率}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {精益广告投放数据分析 - 数据工程师(实习)} % Job title
+    {百度{\ \cdotp\ \ }生态数据产品部} % Organization
+    {2016年8月 - 2017年2月} % Location
+    {\ } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {精益对凤巢、Holmes等广告数据进行监测与评估，建立漏斗模型(人群转化、流动、归因分析)分析广告营销活动效果}
+        \item {负责对上游广告源数据进行ETL(Hive)及数据拼接、编写Spark UDF，优化ETL速率，并线上验证数据分析准确性}
+        %\item {接入按查询/搜索关键词新建模型(Spark)的功能业务，广告主可以按关键词查看广告投放效果}
+      \end{cvitems}
+    }
+        
+%---------------------------------------------------------
+\end{cventries}
+
+
+
+%\input{cv/experience.tex}
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{项目经历}
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+%---------------------------------------------------------
+  \cventry
+    {Alexa智能家居项目 - 负责人} % Job title
+    {} % Organization
+    {} % Location
+    {2018年8月 - 2018年10月} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {参与PayPal创新实验室智能家居组，负责Alexa与飞利浦智能灯具集成开发，组织创新日活动并发表Alexa与智能家居相关演讲}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {量化投资策略分析 - 算法研究} % Job title
+    {} % Organization
+    {} % Location
+    {2016年2月 - 2016年10月} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        %\item {基于python实现Hurst指数、SMA双均线突破、分类预测择时策略}
+        \item {研究并提出基于最大信息熵的股票特征选取方法，对比主成分分析、奇异值分解等方法高出约4.5\%的预测精确度；研究并提出SRA-Voting混合二元分类模型，对比支持向量机、随机森林、AdaBoost高出约3.125\%的预测精确度}
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+%  \cventry
+%    {实习软件工程师{\ \cdotp\ \ }东方名城社区系统} % Job title
+%    {人行道网络信息技术有限公司} % Organization
+%    {\ } % Location
+%    {2015年6月 - 2015年12月} % Date(s)
+%    {
+%      \begin{cvitems} % Description(s) of tasks/responsibilities
+%        \item {参与开发以五角场镇为试点的社区治理系统(社区治理服务、邻里社交、社区公共服务)，主要负责系统需求分析、移动端原型设计、Android应用开发、部分Java Web后台服务(SSM)开发}
+%      \end{cvitems}
+%    }
+    
+%---------------------------------------------------------
+\end{cventries}
+
+
+
+%\input{cv/skills.tex}
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{技能}
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {编程语言} % Category
+    {Python, C++, Java, SQL, Shell} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {框架技术} % Category
+    {Pandas, Flask, Celery, React, Spark} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {工具} % Category
+    {Teradata, MySQL, MongoDB, Emacs, Git, Jenkins, Docker, Excel, Tableau} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {英文} % Category
+    {CET6, GRE(314), 良好听说读写能力} % Skills
+%---------------------------------------------------------
+\end{cvskills}
+
+
+
+%\input{cv/extracurricular.tex}
+%\input{cv/honors.tex}
+%\input{cv/presentation.tex}
+%\input{cv/writing.tex}
+%\input{cv/committees.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}

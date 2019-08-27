@@ -68,6 +68,8 @@
 \renewcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headerfont\color{text} #1}}
 \renewcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{text} #1}}
 
+\renewcommand*{\headerlinestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{text} #1}}
+
 \renewcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \renewcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{graytext} #1}}
 \renewcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{graytext} #1}}
@@ -85,9 +87,9 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 %\photo[circle,noedge,left]{./profile}
-\name{}{杨健}
+\name{}{Jian Yang}
 %\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-\position{高级软件工程师{\enskip\cdotp\enskip}上海}
+\position{Senior Software Engineer{\enskip\cdotp\enskip}Shanghai}
 %\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
 \mobile{(+86) 18516191607}
@@ -106,7 +108,10 @@
 % \googlescholar{googlescholar-id}{}
 %\extrainfo{电话: (+86) 18516191607{\quad\textbar\quad}邮件: ernestyj@outlook.com}
 
-\quote{硕士{\ \ \cdotp\ \ }上海交通大学{\quad\textbar\quad}学士{\ \ \cdotp\ \ }电子科技大学{\quad\textbar\quad}软件工程专业}
+%\quote{Master{\ \ \cdotp\ \ }Shanghai Jiao Tong University{\quad\textbar\quad}Bachelor{\ \ \cdotp\ \ }University of Electronic Science and Technology of China}
+%\linea{Major{\ \ \cdotp\ \ }Software Engineering}
+\lineb{M.Eng. in Software Engineering, Shanghai Jiao Tong University}
+\linec{B.Eng. in Software Engineering, University of Electronic Science and Technology of China}
 
 
 %-------------------------------------------------------------------------------
@@ -133,14 +138,15 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{个人简介}
+\cvsection{Summary}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvparagraph}
 %---------------------------------------------------------
-两年半工作经验。有基于C++的大型分布式NoSQL数据库项目开发经验；参与设计和开发金融交易风控系统，包括决策规则分析系统、自动化风控平台、实时交易数据监控报警平台。熟悉C++面向对象开发；熟悉使用Python开发后台服务、自动化系统，进行数据分析、建模与可视化。
+%三年工作经验。参与开发基于C++的大型分布式NoSQL数据库，熟悉C++面向对象开发。参与设计、开发金融交易风控系统，包括决策规则分析系统、自动化风控平台、实时交易数据监控报警平台；熟悉Python全栈开发，数据分析、建模与可视化。
+Current data engineer at Paypal with 3 years work experience. Developed C++ based large distributed NoSQL database; experienced with C++ developing. Designed and developed financial transaction risk control system, including decision rules analysis, automatic risk control platform, real time transaction data monitoring and alerting; experienced with Python full stack development, data analysis, model building and visualization.
 \end{cvparagraph}
 
 
@@ -149,7 +155,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{工作经历}
+\cvsection{Work Experience}
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
@@ -172,29 +178,31 @@
 %    }
 %---------------------------------------------------------
   \cventry
-    {Rule360 决策规则分析系统 - 高级软件工程师} % Job title
-    {PayPal{\ \cdotp\ \ }数据分析与决策管理部门} % Organization
-    {2017年8月 - 至今} % Location
+    %{Rule360 决策规则分析系统 - 高级软件工程师} % Job title
+    {Rule360 Decision Rule Analytics - Senior Software Engineer} % Job title
+    {PayPal{\ \cdotp\ \ }Decision Analytics and Management} % Organization
+    {Aug. 2017 - Now} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {与全球分析师紧密合作，进行风控数据分析(SQL, Pandas)，构建决策规则分析系统(Flask, React)，包括规则解析(XML)、近实时决策监控、决策规则性能指标评估、决策因子引用分析(Neo4j)等模块，节省约80\%的决策分析成本}
-        \item {采用主副节点、分区等方法优化结构化风控大数据的存储(MySQL)，并支持全量数据更新}
-        %\item {参与设计、构建从损失报警到生成解决方案的自动化风控平台HyperNet，自动生成的风控方案有效性不低于人工解决方案，缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k}
-        %\item {独立构建了一站式客户服务指标分析系统Lexa360，帮助提高自助服务推荐解决方案的准确率，提升客户服务满意度，减少客户联系率，降低人工客服成本}
+        %\item {与全球分析师紧密合作，进行风控数据分析(SQL, Pandas)，构建决策规则分析系统(Flask, React)，包括规则解析(XML)、近实时决策监控、决策规则性能指标评估、决策因子引用分析(Neo4j)等模块，节省约80\%的决策分析成本}
+        %\item {优化风控大数据结构化存储读写性能(MySQL)，支持全量大数据更新}
+        \item {Cooperated with global analysts and analyzed global transactions data (SQL, Pandas). Built Decision Rule Analytics System (Flask, React), including rule parsing (XML), near real time decision data monitoring, rule performance metrics evaluate, decision factors reference analysis (Neo4j). Saved about 80\% decision analytics cost.}
+        \item {Optimized read/write performance on risk big data structural storage (MySQL)，supported full data update.}
       \end{cvitems}
     }
     
 %---------------------------------------------------------
   \cventry
-    {HyperNet 自动化风控平台 - 前后端开发} % Job title
+    {HyperNet 自动化风控平台 - 数据分析与全栈开发} % Job title
     {} % Organization
     {} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征编码(One Hot)，整合生成训练与测试数据集}
+        \item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征独热编码，整合生成训练与测试数据集}
         \item {使用XGBoost构建决策树模型，按风控经验指标过滤决策规则生成风控方案；使用React构建前端损失报警与自动风控方案监控管理平台}
+        \item {构建SQL风控规则翻译引擎，支持用户从任意SQL规则翻译成IBM决策引擎规则}
         \item {有效缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k，荣获PayPal Spot Award(5\%)}
       \end{cvitems}
     }
