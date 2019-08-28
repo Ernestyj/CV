@@ -172,7 +172,7 @@
 %    }
 %---------------------------------------------------------
   \cventry
-    {Rule360 决策规则分析系统 - 高级软件工程师} % Job title
+    {决策规则分析系统 - 高级软件工程师} % Job title
     {PayPal{\ \cdotp\ \ }数据分析与决策管理部门} % Organization
     {2017年8月 - 至今} % Location
     {\ } % Date(s)
@@ -187,14 +187,14 @@
     
 %---------------------------------------------------------
   \cventry
-    {HyperNet 自动化风控平台 - 数据分析与全栈开发} % Job title
+    {自动化风控平台} % Job title 数据分析与全栈开发
     {} % Organization
     {} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征独热编码，整合生成训练与测试数据集}
-        \item {使用XGBoost构建决策树模型，按风控经验指标过滤决策规则生成风控方案；使用React构建前端损失报警与自动风控方案监控管理平台}
+        \item {使用XGBoost构建决策树模型，按风控经验指标过滤决策规则生成风控方案；构建前端损失报警与自动风控方案监控管理平台(React, AntD)}
         \item {构建SQL风控规则翻译引擎，支持用户从任意SQL规则翻译成IBM决策引擎规则}
         \item {有效缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k，荣获PayPal Spot Award(5\%)}
       \end{cvitems}
@@ -202,14 +202,14 @@
 
 %---------------------------------------------------------
   \cventry
-    {Spider 实时交易数据监控报警平台 - 后端开发} % Job title
+    {实时交易数据监控报警平台} % Job title 后端开发
     {} % Organization
     {} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {开发报警任务执行系统， 消费交易决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析(Pandas, Spark)、可视化(Matplotlib)、邮件报警(Jinja2)等任务}
-        \item {基于Celery, RabbitMQ实现任务链和异步优先级任务调度，提高报警服务性能及可靠性}
+        \item {开发报警任务调度执行模块(Apscheduler)，以及警后聚合分析(Pandas, Spark)、可视化(Matplotlib)、邮件报警(Jinja2)等模块}
+        \item {实现任务链和异步优先级任务调度(Celery, RabbitMQ)，提高报警服务性能及可靠性}
       \end{cvitems}
     }
     
@@ -223,7 +223,7 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {研究Mola分布式架构，Meta Server选主机制(Lease)，Node数据分片自动恢复}
         %\item {在Proxyserver中为百度云公网访问MolaDB服务添加标准访问日志(类Nginx)，添加请求key记录，缩短后台故障排查时间}
-        \item {通过加锁解决数据存储节点Node中的分片在自动恢复过程中，异步修改Recover Task引发的恢复任务错误异常，降低Mola服务的故障率}
+        \item {通过加锁解决数据存储节点Node中的分片在自动恢复过程中，异步修改Recover Task引发的恢复任务错误异常，减少Mola服务的故障率}
       \end{cvitems}
     }
 
@@ -235,8 +235,8 @@
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {精益对凤巢、Holmes等广告数据进行监测与评估，建立漏斗模型(人群转化、流动、归因分析)分析广告营销活动效果}
-        \item {负责对上游广告源数据进行ETL(Hive)及数据拼接、编写Spark UDF，优化ETL速率，并线上验证数据分析准确性}
+        \item {监测与评估凤巢、Holmes等广告数据，建立漏斗模型(人群转化、流动、归因分析)分析广告营销活动效果}
+        \item {负责对上游广告源数据进行ETL(Hive)及数据拼接、编写Spark UDF，优化ETL速率}
         %\item {接入按查询/搜索关键词新建模型(Spark)的功能业务，广告主可以按关键词查看广告投放效果}
       \end{cvitems}
     }
@@ -275,7 +275,7 @@
     {2016年2月 - 2016年10月} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        %\item {基于python实现Hurst指数、SMA双均线突破、分类预测择时策略}
+        \item {实现Hurst指数、SMA双均线突破、分类预测择时策略}
         \item {研究并提出基于最大信息熵的股票特征选取方法，对比主成分分析、奇异值分解等方法高出约4.5\%的预测精确度；研究并提出SRA-Voting混合二元分类模型，对比支持向量机、随机森林、AdaBoost高出约3.125\%的预测精确度}
       \end{cvitems}
     }

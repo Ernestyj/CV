@@ -64,14 +64,14 @@
 %\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
 \renewcommand*{\headerlastnamestyle}[1]{{\fontsize{26pt}{1em}\headerfont\bfseries\color{text} #1}}
 \renewcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{awesome} #1}}
-\renewcommand*{\headeraddressstyle}[1]{{\fontsize{10pt}{1em}\headerfont\itshape\color{text} #1}}
-\renewcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headerfont\color{text} #1}}
-\renewcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{text} #1}}
+\renewcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1em}\headerfont\itshape\color{text} #1}}
+\renewcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
+\renewcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{text} #1}}
 
-\renewcommand*{\headerlinestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{text} #1}}
+\renewcommand*{\headerlinestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{text} #1}}%\bodyfont\itshape
 
 \renewcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\renewcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{graytext} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{graytext} #1}}%\itshape
 \renewcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{graytext} #1}}
 \renewcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\itshape\color{text} #1}}
 \renewcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text} #1}}
@@ -179,8 +179,8 @@ Current data engineer at Paypal with 3 years work experience. Developed C++ base
 %---------------------------------------------------------
   \cventry
     %{Rule360 决策规则分析系统 - 高级软件工程师} % Job title
-    {Rule360 Decision Rule Analytics - Senior Software Engineer} % Job title
-    {PayPal{\ \cdotp\ \ }Decision Analytics and Management} % Organization
+    {Decision Rule Analytics - Senior Software Engineer} % Job title
+    {PayPal{\ \cdotp\ \ }Decision Analytics and Management Department} % Organization
     {Aug. 2017 - Now} % Location
     {\ } % Date(s)
     {
@@ -194,57 +194,70 @@ Current data engineer at Paypal with 3 years work experience. Developed C++ base
     
 %---------------------------------------------------------
   \cventry
-    {HyperNet 自动化风控平台 - 数据分析与全栈开发} % Job title
+    %{HyperNet 自动化风控平台 - 数据分析与全栈开发} % Job title
+    {Automatic Risk Control Platform} % Job title Data Analysis and Full Stack Develop
     {} % Organization
     {} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征独热编码，整合生成训练与测试数据集}
-        \item {使用XGBoost构建决策树模型，按风控经验指标过滤决策规则生成风控方案；使用React构建前端损失报警与自动风控方案监控管理平台}
-        \item {构建SQL风控规则翻译引擎，支持用户从任意SQL规则翻译成IBM决策引擎规则}
-        \item {有效缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k，荣获PayPal Spot Award(5\%)}
+        %\item {构建统一数据预处理平台，对不同源数据(HDFS, Teradata)进行Spark ETL，进行特征统计分析与特征独热编码，整合生成训练与测试数据集}
+        %\item {使用XGBoost构建决策树模型，按风控经验指标过滤决策规则生成风控方案；使用React构建前端损失报警与自动风控方案监控管理平台}
+        %\item {构建SQL风控规则翻译引擎，支持用户从任意SQL规则翻译成IBM决策引擎规则}
+        %\item {有效缩短2-3周生成风控方案的周期，节省约70\%人力成本，每月止损收益约\$80k，荣获PayPal Spot Award(5\%)}
+        \item {Developed unified data preprocessing platform, supporting Spark ETL from diverse data source (HDFS, Teradata), and generating training and testing dataset followed with feature statistics and feature One Hot Encoding.}
+        \item {Built decision tree model by XGBoost, and set up performance metrics for generating accurate risk solutions.}
+        \item {Developed loss alerting and risk solutions monitoring web platform by React/AntD.}
+        \item {Built standard SQL to risk solution (IBM decision rules) translate engine.}
+        \item {The project effectively cut down 2~3 weeks for generating risk solutions, saved about 70\% human resources and saved loss about \$80k per month. Won Paypal Spot Award (5\%).}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Spider 实时交易数据监控报警平台 - 后端开发} % Job title
+    %{Spider 实时交易数据监控报警平台 - 后端开发} % Job title
+    {Realtime Transaction Monitoring and Alerting} % Job title Backend Develop
     {} % Organization
     {} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {开发报警任务执行系统， 消费交易决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析(Pandas, Spark)、可视化(Matplotlib)、邮件报警(Jinja2)等任务}
-        \item {基于Celery, RabbitMQ实现任务链和异步优先级任务调度，提高报警服务性能及可靠性}
+        %\item {开发报警任务执行系统， 消费交易决策引擎产生的警报(Apscheduler)，并调度执行事后聚合分析(Pandas, Spark)、可视化(Matplotlib)、邮件报警(Jinja2)等任务}
+        %\item {基于Celery, RabbitMQ实现任务链和异步优先级任务调度，提高报警服务性能及可靠性}
+        \item {Developed alert action consumption module (Apscheduler) for Risk Decision Engine, and post alert concentration analysis (Pandas, Spark), visualization (Matplotlib) and mail alerting (Jinja2).}
+        \item {Implemented task chains and asynchronized prioritized task scheduling (Celery, RabbitMQ), improved the alerting service performance and reliability.}
       \end{cvitems}
     }
     
 %---------------------------------------------------------
   \cventry
-    {Mola大型分布式NoSQL数据库 - 研发工程师} % Job title
-    {百度{\ \cdotp\ \ }基础架构部} % Organization
-    {2017年3月 - 2017年6月} % Location
+    %{Mola大型分布式NoSQL数据库 - 研发工程师} % Job title
+    {Mola Large Distributed NoSQL Database - Research and Develop Engineer} % Job title
+    {Baidu{\ \cdotp\ \ }Department of Infrastructure (INF)} % Organization
+    {Mar. 2017 - Jun. 2017} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {研究Mola分布式架构，Meta Server选主机制(Lease)，Node数据分片自动恢复}
-        %\item {在Proxyserver中为百度云公网访问MolaDB服务添加标准访问日志(类Nginx)，添加请求key记录，缩短后台故障排查时间}
-        \item {通过加锁解决数据存储节点Node中的分片在自动恢复过程中，异步修改Recover Task引发的恢复任务错误异常，降低Mola服务的故障率}
+        %\item {研究Mola分布式架构，Meta Server选主机制(Lease)，Node数据分片自动恢复}
+        %\item {通过加锁解决数据存储节点Node中的分片在自动恢复过程中，异步修改Recover Task引发的恢复任务错误异常，降低Mola服务的故障率}
+        \item {Research on Mola distributed database architecture, master election on metadata server (Lease), data fragment auto-recover on node server.}
+        \item {Fixed and enhanced the asynchronized write in data fragment auto-recover process by applying lock mechanism.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {精益广告投放数据分析 - 数据工程师(实习)} % Job title
-    {百度{\ \cdotp\ \ }生态数据产品部} % Organization
-    {2016年8月 - 2017年2月} % Location
+    %{精益广告投放数据分析 - 数据工程师(实习)} % Job title
+    {Advertise Big Data - Intern Data Engineer} % Job title
+    {Baidu{\ \cdotp\ \ }Commercial Ecosystem Data Product Department} % Organization
+    {Aug. 2016 - Feb. 2017} % Location
     {\ } % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {精益对凤巢、Holmes等广告数据进行监测与评估，建立漏斗模型(人群转化、流动、归因分析)分析广告营销活动效果}
-        \item {负责对上游广告源数据进行ETL(Hive)及数据拼接、编写Spark UDF，优化ETL速率，并线上验证数据分析准确性}
-        %\item {接入按查询/搜索关键词新建模型(Spark)的功能业务，广告主可以按关键词查看广告投放效果}
+        %\item {精益对凤巢、Holmes等广告数据进行监测与评估，建立漏斗模型(人群转化、流动、归因分析)分析广告营销活动效果}
+        %\item {负责对上游广告源数据进行ETL(Hive)及数据拼接、编写Spark UDF，优化ETL速率，并线上验证数据分析准确性}
+        \item {Monitoring advertise big data from Fengchao and Holmes data source. Assisted in building funnel model for analyzing crowd transferring, flowing, and attribution analysis, to evaluate the effects of advertising and marketing campaigns.}
+        \item {Assisted in upstream data ETL (Hive), implementing Spark UDF and optimizing ETL performance.}
       \end{cvitems}
     }
         
@@ -257,33 +270,39 @@ Current data engineer at Paypal with 3 years work experience. Developed C++ base
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{项目经历}
+\cvsection{Project Experience}
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
 %---------------------------------------------------------
   \cventry
-    {Alexa智能家居项目 - 负责人} % Job title
+    %{Alexa智能家居项目 - 负责人} % Job title
+    {Alexa Smart Home Group - Group Leader} % Job title
     {} % Organization
     {} % Location
-    {2018年8月 - 2018年10月} % Date(s)
+    {Aug. 2018 - Oct. 2018} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {参与PayPal创新实验室智能家居组，负责Alexa与飞利浦智能灯具集成开发，组织创新日活动并发表Alexa与智能家居相关演讲}
+        %\item {参与PayPal创新实验室智能家居组，负责Alexa与飞利浦智能灯具集成开发，组织创新日活动并发表Alexa与智能家居相关演讲}
+        \item {Attended Paypal Innovation Lab Smart Home Group, lead to develop and integrate Alexa with Philips smart lamps. Organized innovation day activity and made a speech on smart home technology.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {量化投资策略分析 - 算法研究} % Job title
+    %{量化投资策略分析 - 算法研究} % Job title
+    {Quantitative Investment Analysis  - Algorithm Research} % Job title
     {} % Organization
     {} % Location
-    {2016年2月 - 2016年10月} % Date(s)
+    {Feb. 2016 - Oct. 2016} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         %\item {基于python实现Hurst指数、SMA双均线突破、分类预测择时策略}
-        \item {研究并提出基于最大信息熵的股票特征选取方法，对比主成分分析、奇异值分解等方法高出约4.5\%的预测精确度；研究并提出SRA-Voting混合二元分类模型，对比支持向量机、随机森林、AdaBoost高出约3.125\%的预测精确度}
+        %\item {研究并提出基于最大信息熵的股票特征选取方法，对比主成分分析、奇异值分解等方法高出约4.5\%的预测精确度；研究并提出SRA-Voting混合二元分类模型，对比支持向量机、随机森林、AdaBoost高出约3.125\%的预测精确度}
+        \item {Implemented Hurst Exponent, dual SMA and classification based timing strategy with Python.}
+        \item {Researched and proposed Maximal Information Coefficient based stock feature selection method, achieving 4.5\% higher predicting precision compared with Principle Component Analysis and Singular Value Decomposition method.}
+        \item {Designed an ensemble classification model named SRA-Voting, gaining 3.125\% higher predicting precision compared with Support Vector Machine and Fandom Forest.}
       \end{cvitems}
     }
     
@@ -308,27 +327,27 @@ Current data engineer at Paypal with 3 years work experience. Developed C++ base
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{技能}
+\cvsection{Skills}
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvskills}
 %---------------------------------------------------------
   \cvskill
-    {编程语言} % Category
+    {Programming} % Category
     {Python, C++, Java, SQL, Shell} % Skills
 %---------------------------------------------------------
   \cvskill
-    {框架技术} % Category
+    {Framework} % Category
     {Pandas, Flask, Celery, React, Spark} % Skills
 %---------------------------------------------------------
   \cvskill
-    {工具} % Category
+    {Tool} % Category
     {Teradata, MySQL, MongoDB, Emacs, Git, Jenkins, Docker, Excel, Tableau} % Skills
 %---------------------------------------------------------
   \cvskill
-    {英文} % Category
-    {CET6, GRE(314), 良好听说读写能力} % Skills
+    {English} % Category
+    {CET6, GRE(314), can be used as work language} % Skills
 %---------------------------------------------------------
 \end{cvskills}
 
